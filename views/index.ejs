@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Map</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <style>
+        body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    #map {
+      height: 600px;
+      width: 100%;
+      border: 2px solid #444;
+     margin-bottom: 50px;
+    }
+    input, button {
+      margin-bottom: px;
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="locationInput" placeholder="Enter location (e.g. Bhopal)">
+  <button onclick="searchAndMark()">Search & Mark</button>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
